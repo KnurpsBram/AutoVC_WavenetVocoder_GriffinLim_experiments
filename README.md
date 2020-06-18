@@ -1,13 +1,13 @@
 # AutoVC_WavenetVocoder_GriffinLim_experiments
 Experiments on AutoVC and WaveNet vocoder, compared against the Griffin Lim spectrogram inversion algorithm
 
-Thanks to auspicious3000 for his great work on AutoVC ([repo](https://github.com/auspicious3000/autovc), [paper](https://arxiv.org/abs/1905.05879))!
+Thanks to auspicious3000 for his great work on AutoVC! ([repo](https://github.com/auspicious3000/autovc), [paper](https://arxiv.org/abs/1905.05879))
 
-AutoVC achieves zero-shot voice conversion using only a vanilla auto-encoder loss. The authors provide in their repo a pretrained model and the speaker embeddings of 4 of their speakers. They use a [wavenet vocoder](https://github.com/r9y9/wavenet_vocoder) to convert spectrograms to audio. 
+AutoVC achieves zero-shot voice conversion using only a vanilla auto-encoder loss. The authors provide in their repo a pretrained model and the speaker embeddings of 4 speakers. They use a [wavenet vocoder](https://github.com/r9y9/wavenet_vocoder) to convert spectrograms to audio. 
 
 **The pretrained models can be downloaded from [here](https://github.com/auspicious3000/autovc)**
 
-This repo build upon the steps of [miaoYuanyuan](https://github.com/miaoYuanyuan/gen_melSpec_from_wav), who expressed the steps of spectrogram preprocessing more clearly.
+This repo builds upon the steps of [miaoYuanyuan](https://github.com/miaoYuanyuan/gen_melSpec_from_wav), who expressed the steps of spectrogram preprocessing more clearly.
 
 AutoVC performs Voice Conversion in three steps;
 - Convert a mel-spectrogram representation of a person's speech into a mel-spectrogram representation of another person's speech (AutoVC)
